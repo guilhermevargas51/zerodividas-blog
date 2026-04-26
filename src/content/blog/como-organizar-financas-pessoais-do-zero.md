@@ -1,8 +1,9 @@
 ---
 title: "Como Organizar as Finanças Pessoais do Zero: Guia Completo"
-description: "Nunca organizou suas finanças? Este guia mostra como começar do zero, montar seu orçamento e criar controle financeiro mesmo ganhando pouco."
+description: "Aprenda a organizar suas finanças do zero: montar orçamento, criar controle e parar de viver no vermelho mesmo com salário baixo."
 pubDate: 2026-04-26
 heroImage: "/blog-placeholder-2.jpg"
+keywords: "organizar finanças, controle financeiro, orçamento pessoal, como controlar gastos"
 ---
 
 Você nunca aprendeu a lidar com dinheiro. Ninguém te ensinou na escola. Seus pais provavelmente também não sabiam muito. E agora você chega no fim do mês sem entender para onde o salário foi.

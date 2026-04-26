@@ -1,8 +1,9 @@
 ---
 title: "Como Negociar Dívida com o Banco e Conseguir até 90% de Desconto"
-description: "Saiba como negociar dívida com banco, financeira ou cartão de crédito. Estratégias que funcionam para conseguir descontos reais e limpar o nome."
+description: "Negocie sua dívida com banco, financeira ou cartão. Estratégias comprovadas para conseguir descontos de até 90% e limpar seu nome."
 pubDate: 2026-04-26
 heroImage: "/blog-placeholder-3.jpg"
+keywords: "negociar dívida, desconto banco, limpar nome, serasa, renegociar crédito"
 ---
 
 Você deve para o banco e acha que não tem saída — que vai pagar tudo com juros absurdos ou ficar negativado para sempre. Mas existe uma realidade que os bancos não divulgam: **dívidas são negociáveis**.

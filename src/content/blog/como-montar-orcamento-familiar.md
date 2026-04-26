@@ -1,8 +1,9 @@
 ---
 title: "Como Montar um Orçamento Familiar: Passo a Passo Simples"
-description: "Aprenda como montar um orçamento familiar do zero, distribuir a renda da família e ter controle financeiro mesmo com filhos e despesas variadas."
+description: "Orçamento familiar do zero: distribua renda, controle despesas e organize as finanças da sua família com filhos e contas compartilhadas."
 pubDate: 2026-04-26
 heroImage: "/blog-placeholder-3.jpg"
+keywords: "orçamento familiar, finanças família, controle financeiro, planejamento orçamentário, gastos família"
 ---
 
 Organizar as finanças sozinho já é difícil. Quando envolve família — cônjuge, filhos, contas compartilhadas — a complexidade dobra.

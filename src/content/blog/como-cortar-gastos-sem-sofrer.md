@@ -1,8 +1,9 @@
 ---
 title: "Como Cortar Gastos Sem Sofrer: 20 Cortes que Fazem Diferença Real"
-description: "Cortar gastos não precisa ser sofrimento. Veja 20 formas práticas de reduzir despesas sem abrir mão do que realmente importa para você."
+description: "20 formas práticas de cortar gastos sem sofrimento. Reduza despesas mantendo qualidade de vida e o que realmente importa para você."
 pubDate: 2026-04-26
 heroImage: "/blog-placeholder-1.jpg"
+keywords: "cortar gastos, economia pessoal, reduzir despesas, economizar dinheiro, dicas para poupar"
 ---
 
 "Economizar" virou sinônimo de passar privação. De não poder nada. De vida sem prazer.

@@ -1,8 +1,9 @@
 ---
-title: "Planilha de Controle Financeiro Mensal Grátis: Como Usar e Montar a Sua"
-description: "Aprenda como montar ou usar uma planilha de controle financeiro mensal gratuita para organizar gastos, acompanhar dívidas e guardar dinheiro todo mês."
+title: "Planilha de Controle Financeiro Mensal Grátis: Como Montar"
+description: "Planilha gratuita de controle financeiro: organize gastos, acompanhe dívidas e organize a renda mensal com fórmulas simples no Excel."
 pubDate: 2026-04-26
 heroImage: "/blog-placeholder-2.jpg"
+keywords: "planilha orçamento, controle financeiro, Excel gratuito, planilha gastos, gerenciar dinheiro"
 ---
 
 Planilha de controle financeiro não precisa ser complicada. Não precisa de fórmulas avançadas, gráficos bonitos ou macros. Precisa de uma coisa só: que você use todo mês.

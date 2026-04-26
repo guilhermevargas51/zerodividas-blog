@@ -1,8 +1,9 @@
 ---
 title: "O Que Fazer Quando Não Sobra Dinheiro no Fim do Mês"
-description: "Chega no fim do mês e o dinheiro acabou? Veja o que fazer quando não sobra nada, como identificar o problema real e como mudar essa situação."
+description: "Quando não sobra dinheiro no mês? Identifique o problema real e mude essa situação com estratégias que funcionam de verdade."
 pubDate: 2026-04-26
 heroImage: "/blog-placeholder-2.jpg"
+keywords: "não sobra dinheiro, fim do mês, controle financeiro, déficit orçamentário, apertado"
 ---
 
 Dia 25. Salário já foi. Ainda faltam 5 dias para o próximo. E a conta está no zero — ou no negativo.

@@ -1,8 +1,9 @@
 ---
 title: "Reserva de Emergência: O Que É, Quanto Guardar e Como Montar"
-description: "Sem reserva de emergência, qualquer imprevisto vira dívida. Aprenda o que é, quanto você precisa e como montar a sua mesmo ganhando pouco."
+description: "Reserva de emergência previne dívidas. Saiba quanto guardar, onde investir e como montar a sua mesmo com salário baixo."
 pubDate: 2026-04-26
 heroImage: "/blog-placeholder-3.jpg"
+keywords: "reserva emergência, fundo emergência, poupança segurança, quanto guardar, reserva financeira"
 ---
 
 Pneu furou. Geladeira quebrou. Criança adoeceu. Demissão inesperada.

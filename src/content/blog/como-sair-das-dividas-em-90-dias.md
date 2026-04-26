@@ -2,7 +2,6 @@
 title: "Como Sair das Dívidas em 90 Dias: O Método Passo a Passo"
 description: "Aprenda como sair das dívidas em 90 dias com um método prático e direto. Organize, priorize e quite suas dívidas mesmo com salário apertado."
 pubDate: 2026-04-26
-heroImage: "/blog-placeholder-1.jpg"
 keywords: "sair das dívidas, método 90 dias, quitar dívida, como sair do vermelho, dívida cartão"
 ---
 

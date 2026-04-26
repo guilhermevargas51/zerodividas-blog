@@ -2,7 +2,6 @@
 title: "Como Sair do Vermelho com Salário Baixo: 7 Estratégias Reais"
 description: "7 estratégias comprovadas para sair das dívidas mesmo com salário baixo. Sem milagres, sem gastar menos em comida, soluções reais."
 pubDate: 2026-04-26
-heroImage: "/blog-placeholder-4.jpg"
 keywords: "sair do vermelho, salário baixo, dívidas, estratégias de economia, renda baixa"
 ---
 

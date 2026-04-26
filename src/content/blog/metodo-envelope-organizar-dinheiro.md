@@ -2,7 +2,6 @@
 title: "Método Envelope: Como Organizar o Dinheiro e Parar de Gastar Mais do que Tem"
 description: "Método envelope: técnica simples e eficaz para controlar gastos. Como funciona, adaptar para digital e por que funciona tão bem."
 pubDate: 2026-04-26
-heroImage: "/blog-placeholder-1.jpg"
 keywords: "método envelope, controle gastos, organizar dinheiro, limite gastos, método 50 30 20"
 ---
 

@@ -2,7 +2,6 @@
 title: "Como Montar um Orçamento Familiar: Passo a Passo Simples"
 description: "Orçamento familiar do zero: distribua renda, controle despesas e organize as finanças da sua família com filhos e contas compartilhadas."
 pubDate: 2026-04-26
-heroImage: "/blog-placeholder-3.jpg"
 keywords: "orçamento familiar, finanças família, controle financeiro, planejamento orçamentário, gastos família"
 ---
 

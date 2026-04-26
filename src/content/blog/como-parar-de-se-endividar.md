@@ -2,7 +2,6 @@
 title: "Como Parar de Se Endividar: As Causas Reais e Como Resolver"
 description: "Por que você se endivida de novo? Descubra as 5 causas reais do endividamento crônico e como quebrar esse ciclo de verdade."
 pubDate: 2026-04-26
-heroImage: "/blog-placeholder-4.jpg"
 keywords: "endividamento, parar de se endividar, ciclo dívida, comportamento financeiro, hábitos dinheiro"
 ---
 

@@ -2,7 +2,6 @@
 title: "O Que Fazer Quando Não Sobra Dinheiro no Fim do Mês"
 description: "Quando não sobra dinheiro no mês? Identifique o problema real e mude essa situação com estratégias que funcionam de verdade."
 pubDate: 2026-04-26
-heroImage: "/blog-placeholder-2.jpg"
 keywords: "não sobra dinheiro, fim do mês, controle financeiro, déficit orçamentário, apertado"
 ---
 

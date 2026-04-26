@@ -490,15 +490,15 @@ const description = 'Checklist completo com 30 passos práticos divididos em 3 f
 		<Footer />
 
 		<script>
-			// Persiste estado dos checkboxes no localStorage
 			const checkboxes = document.querySelectorAll('.item-checkbox');
-			checkboxes.forEach((cb, i) => {
-				const key = `checklist-item-${i}`;
+			checkboxes.forEach(function(cb, i) {
+				const key = 'checklist-item-' + i;
+				const input = /** @type {HTMLInputElement} */ (cb);
 				if (localStorage.getItem(key) === 'true') {
-					(cb as HTMLInputElement).checked = true;
+					input.checked = true;
 				}
-				cb.addEventListener('change', () => {
-					localStorage.setItem(key, String((cb as HTMLInputElement).checked));
+				cb.addEventListener('change', function() {
+					localStorage.setItem(key, String(input.checked));
 				});
 			});
 		</script>

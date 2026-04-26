@@ -1,0 +1,506 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
+const title = 'Checklist: 30 Passos para Zerar Suas Dívidas em 90 Dias';
+const description = 'Checklist completo com 30 passos práticos divididos em 3 fases de 30 dias para sair das dívidas definitivamente.';
+---
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			.checklist-page {
+				max-width: 700px;
+				margin: 40px auto;
+				padding: 0 24px 80px;
+			}
+			.page-header {
+				text-align: center;
+				margin-bottom: 48px;
+				padding-bottom: 32px;
+				border-bottom: 2px solid #e2e8f0;
+			}
+			.page-header .badge {
+				display: inline-block;
+				background: #dcfce7;
+				color: #15803d;
+				font-size: 12px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				padding: 4px 12px;
+				border-radius: 20px;
+				margin-bottom: 16px;
+			}
+			.page-header h1 {
+				font-size: clamp(24px, 4vw, 36px);
+				line-height: 1.2;
+				color: #0f172a;
+				margin-bottom: 12px;
+			}
+			.page-header p {
+				color: #64748b;
+				font-size: 16px;
+			}
+			.print-btn {
+				display: inline-block;
+				background: #f1f5f9;
+				color: #475569;
+				font-size: 13px;
+				padding: 8px 16px;
+				border-radius: 6px;
+				text-decoration: none;
+				margin-top: 12px;
+				cursor: pointer;
+				border: 1px solid #e2e8f0;
+			}
+			@media print {
+				.print-btn, header, footer { display: none; }
+				.checklist-page { margin: 0; padding: 0; }
+			}
+
+			.phase-section {
+				margin-bottom: 48px;
+			}
+			.phase-header {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				margin-bottom: 20px;
+				padding: 16px 20px;
+				border-radius: 10px;
+				color: #fff;
+			}
+			.phase-header.phase-1 { background: #dc2626; }
+			.phase-header.phase-2 { background: #d97706; }
+			.phase-header.phase-3 { background: #16a34a; }
+			.phase-label-text {
+				font-size: 12px;
+				opacity: 0.85;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.phase-title {
+				font-size: 20px;
+				font-weight: 700;
+				margin: 0;
+			}
+			.phase-subtitle {
+				font-size: 14px;
+				opacity: 0.85;
+				margin-top: 2px;
+			}
+
+			.checklist-items {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+			}
+			.checklist-item {
+				display: flex;
+				align-items: flex-start;
+				gap: 14px;
+				padding: 14px 16px;
+				background: #fff;
+				border: 1px solid #e2e8f0;
+				border-radius: 8px;
+				transition: background 0.15s;
+			}
+			.checklist-item:hover {
+				background: #f8fafc;
+			}
+			.item-checkbox {
+				width: 22px;
+				height: 22px;
+				border: 2px solid #cbd5e1;
+				border-radius: 4px;
+				flex-shrink: 0;
+				margin-top: 1px;
+				cursor: pointer;
+				appearance: none;
+				-webkit-appearance: none;
+				background: #fff;
+				transition: all 0.15s;
+			}
+			.item-checkbox:checked {
+				background: #16a34a;
+				border-color: #16a34a;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M13.5 4.5l-7.5 7.5-3.5-3.5' stroke='%23fff' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+				background-size: 14px;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.item-number {
+				font-size: 11px;
+				font-weight: 700;
+				color: #94a3b8;
+				flex-shrink: 0;
+				min-width: 20px;
+				padding-top: 2px;
+			}
+			.item-content strong {
+				display: block;
+				font-size: 15px;
+				color: #1e293b;
+				margin-bottom: 2px;
+			}
+			.item-content span {
+				font-size: 13px;
+				color: #64748b;
+				line-height: 1.4;
+			}
+
+			.cta-section {
+				margin-top: 56px;
+				background: linear-gradient(135deg, #1e3a5f 0%, #0f2027 100%);
+				border-radius: 16px;
+				padding: 40px 32px;
+				text-align: center;
+				color: #fff;
+			}
+			.cta-section h2 {
+				font-size: 22px;
+				margin-bottom: 12px;
+			}
+			.cta-section p {
+				color: #cbd5e1;
+				margin-bottom: 24px;
+				font-size: 15px;
+				max-width: 440px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.cta-section a {
+				display: inline-block;
+				background: #f59e0b;
+				color: #000;
+				font-weight: 700;
+				padding: 14px 28px;
+				border-radius: 8px;
+				text-decoration: none;
+				font-size: 15px;
+			}
+			.cta-section a:hover {
+				background: #d97706;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="checklist-page">
+				<div class="page-header">
+					<div class="badge">Checklist Gratuito</div>
+					<h1>30 Passos para Zerar Suas Dívidas em 90 Dias</h1>
+					<p>Marque cada passo concluído. Progresso visível = motivação real.</p>
+					<button class="print-btn" onclick="window.print()">Imprimir checklist</button>
+				</div>
+
+				<!-- FASE 1 -->
+				<div class="phase-section">
+					<div class="phase-header phase-1">
+						<div>
+							<div class="phase-label-text">Dias 1–30</div>
+							<h2 class="phase-title">Fase 1: Diagnóstico e Corte</h2>
+							<div class="phase-subtitle">Entender onde você está e parar o sangramento</div>
+						</div>
+					</div>
+					<div class="checklist-items">
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">01</span>
+							<div class="item-content">
+								<strong>Liste todas as dívidas em um papel ou planilha</strong>
+								<span>Credor, valor total, taxa de juros, parcela mensal. Sem omitir nada — só encarando a realidade você pode agir.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">02</span>
+							<div class="item-content">
+								<strong>Calcule sua renda líquida mensal real</strong>
+								<span>O que entra na conta, não o salário bruto. Se a renda varia, use a média dos últimos 3 meses.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">03</span>
+							<div class="item-content">
+								<strong>Mapeie todos os gastos do último mês</strong>
+								<span>Use o extrato do banco e faturas de cartão. Categorize: moradia, alimentação, transporte, lazer, assinaturas, dívidas.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">04</span>
+							<div class="item-content">
+								<strong>Identifique os 3 maiores gastos desnecessários</strong>
+								<span>Assinaturas esquecidas, delivery frequente, compras por impulso. Não julgue — só observe e anote.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">05</span>
+							<div class="item-content">
+								<strong>Cancele ou suspenda ao menos 2 assinaturas</strong>
+								<span>Streaming, academia, apps pagos que você mal usa. Cada R$ 30 cancelado são R$ 360 por ano.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">06</span>
+							<div class="item-content">
+								<strong>Pare de usar o cartão de crédito por 30 dias</strong>
+								<span>Só por este mês. Isso quebra o ciclo de gastar mais do que entra. Guarde o cartão, use débito ou dinheiro.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">07</span>
+							<div class="item-content">
+								<strong>Monte o orçamento do mês com as categorias reais</strong>
+								<span>Planejado vs. real. Pelo menos: moradia, alimentação, transporte, saúde, dívidas. Use papel, planilha ou app.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">08</span>
+							<div class="item-content">
+								<strong>Separe R$ 50–200 para a reserva de emergência inicial</strong>
+								<span>Antes de qualquer outra coisa no dia do salário. Conta separada. Isso evita novas dívidas quando aparecer um imprevisto.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">09</span>
+							<div class="item-content">
+								<strong>Identifique a dívida mais cara (maior taxa de juros)</strong>
+								<span>Geralmente cheque especial ou rotativo do cartão. Ela vai ser a primeira a atacar na Fase 2.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">10</span>
+							<div class="item-content">
+								<strong>Registre gastos por 7 dias consecutivos</strong>
+								<span>Cada compra, por menor que seja. Uma semana de registro revela padrões que você não via antes.</span>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<!-- FASE 2 -->
+				<div class="phase-section">
+					<div class="phase-header phase-2">
+						<div>
+							<div class="phase-label-text">Dias 31–60</div>
+							<h2 class="phase-title">Fase 2: Negociação e Plano</h2>
+							<div class="phase-subtitle">Reduzir o tamanho das dívidas e criar o plano de quitação</div>
+						</div>
+					</div>
+					<div class="checklist-items">
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">11</span>
+							<div class="item-content">
+								<strong>Consulte seu CPF no Serasa/SPC</strong>
+								<span>Saber exatamente o que está negativado (e o que não está) muda a estratégia de negociação.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">12</span>
+							<div class="item-content">
+								<strong>Verifique se alguma dívida já prescreveu</strong>
+								<span>Dívidas acima de 5 anos podem ter prescrito (CC Art. 206). Se prescrita, você não é mais obrigado a pagar — só a negativação pode ser removida.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">13</span>
+							<div class="item-content">
+								<strong>Pesquise feirões de negociação (Serasa Limpa Nome)</strong>
+								<span>Descontos de 50–99% são comuns nessas ações. Vale checar antes de pagar qualquer valor integral.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">14</span>
+							<div class="item-content">
+								<strong>Ligue para o banco e peça a proposta de renegociação</strong>
+								<span>Diga que está passando por dificuldades. Peça desconto nos juros, parcelamento estendido ou portabilidade de crédito.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">15</span>
+							<div class="item-content">
+								<strong>Negocie a dívida mais cara em primeiro lugar</strong>
+								<span>É ela que mais consome do seu orçamento todo mês. Qualquer redução aqui libera dinheiro para as outras.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">16</span>
+							<div class="item-content">
+								<strong>Defina o valor máximo que você pode pagar por mês em dívidas</strong>
+								<span>Regra: não mais que 30% da renda líquida. Acima disso, o orçamento quebra e você volta a acumular dívidas.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">17</span>
+							<div class="item-content">
+								<strong>Monte o plano de quitação com ordem de prioridade</strong>
+								<span>Ordene da maior taxa para a menor (método avalanche). Ou da menor dívida para a maior (método bola de neve). Escolha um e siga.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">18</span>
+							<div class="item-content">
+								<strong>Evite novas parcelas e financiamentos</strong>
+								<span>Por enquanto, nada a prazo. Cada nova parcela atrasa o fim das dívidas atuais. Se precisar muito, espere quitar pelo menos a dívida #1.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">19</span>
+							<div class="item-content">
+								<strong>Avalie fontes de renda extra pontuais</strong>
+								<span>Vender itens que não usa, freelas no fim de semana, bicos eventuais. Não precisa ser permanente — só para acelerar a quitação.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">20</span>
+							<div class="item-content">
+								<strong>Faça o primeiro pagamento extra em uma dívida</strong>
+								<span>Mesmo que seja R$ 50 a mais. O primeiro pagamento extra é o mais difícil — e o mais motivador.</span>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<!-- FASE 3 -->
+				<div class="phase-section">
+					<div class="phase-header phase-3">
+						<div>
+							<div class="phase-label-text">Dias 61–90</div>
+							<h2 class="phase-title">Fase 3: Consolidação e Blindagem</h2>
+							<div class="phase-subtitle">Quitar as primeiras dívidas e criar hábitos que evitam recaída</div>
+						</div>
+					</div>
+					<div class="checklist-items">
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">21</span>
+							<div class="item-content">
+								<strong>Quite a primeira dívida do plano</strong>
+								<span>Se ainda não quitou, concentre todos os recursos disponíveis aqui. Zerar a primeira dívida muda psicologicamente tudo.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">22</span>
+							<div class="item-content">
+								<strong>Redirecione a parcela quitada para a próxima dívida</strong>
+								<span>Se pagava R$ 200 por mês no cartão e quitou, agora esse R$ 200 vai direto para a segunda dívida. Isso é o efeito bola de neve.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">23</span>
+							<div class="item-content">
+								<strong>Atualize sua planilha de dívidas</strong>
+								<span>Risque o que pagou. Ver o progresso no papel/tela é motivação concreta — não abstrata.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">24</span>
+							<div class="item-content">
+								<strong>Construa a reserva de emergência até R$ 1.000</strong>
+								<span>Essa meta inicial já resolve 90% dos imprevistos do dia a dia sem precisar de empréstimo ou cartão.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">25</span>
+							<div class="item-content">
+								<strong>Revise o orçamento para os próximos 3 meses</strong>
+								<span>Com a situação melhorando, ajuste as categorias. O orçamento de quem está quitando dívidas é diferente do de quem está sobrevivendo.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">26</span>
+							<div class="item-content">
+								<strong>Identifique o gatilho que gerou as dívidas</strong>
+								<span>Compra emocional? Falta de planejamento para despesas sazonais? Perda de renda? Sem entender a causa, o ciclo repete.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">27</span>
+							<div class="item-content">
+								<strong>Crie uma regra pessoal para o cartão de crédito</strong>
+								<span>Exemplos: só usar para compras acima de R$ 100 que já estão no orçamento; pagar fatura integral todo mês; limite máximo de R$ X.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">28</span>
+							<div class="item-content">
+								<strong>Configure débito automático do salário para a reserva</strong>
+								<span>No dia que cai o salário, transferência automática para conta separada. Antes de qualquer gasto. Mesmo que seja R$ 50.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">29</span>
+							<div class="item-content">
+								<strong>Faça uma revisão financeira mensal</strong>
+								<span>30 minutos no fim de cada mês: compare planejado vs. real, ajuste o próximo mês, veja o saldo das dívidas. Consistência bate intensidade.</span>
+							</div>
+						</label>
+						<label class="checklist-item">
+							<input type="checkbox" class="item-checkbox" />
+							<span class="item-number">30</span>
+							<div class="item-content">
+								<strong>Celebre cada dívida quitada — e continue</strong>
+								<span>Reconheça o progresso sem usar isso como pretexto para gastar. Uma comemoração cabe no orçamento. Uma celebração que cria nova dívida, não.</span>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<!-- CTA -->
+				<div class="cta-section">
+					<h2>Quer o método completo?</h2>
+					<p>O checklist é o mapa. O <strong>Zerar Dívidas em 90 Dias</strong> é o GPS — com planilha, passo a passo detalhado e tudo explicado para você executar sem erro.</p>
+					<a href="/produto">Conhecer o método completo →</a>
+				</div>
+			</div>
+		</main>
+		<Footer />
+
+		<script>
+			// Persiste estado dos checkboxes no localStorage
+			const checkboxes = document.querySelectorAll('.item-checkbox');
+			checkboxes.forEach((cb, i) => {
+				const key = `checklist-item-${i}`;
+				if (localStorage.getItem(key) === 'true') {
+					(cb as HTMLInputElement).checked = true;
+				}
+				cb.addEventListener('change', () => {
+					localStorage.setItem(key, String((cb as HTMLInputElement).checked));
+				});
+			});
+		</script>
+	</body>
+</html>
